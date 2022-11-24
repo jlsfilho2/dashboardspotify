@@ -10,7 +10,6 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    <script src="./btnCompartilhar.js"></script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../login/img/Spotify-icon.png" type="image/x-icon">
@@ -25,6 +24,9 @@
         <div class="logout">
             <button id="logout" onClick="deslogar()"> Log out </button>
         </div>
+        <div class="persist">
+            <button id="persist" onClick="salvar()"> Salvar dados </button>
+        </div>
     </section>
     <section class="dashboard">
         <div class="row">
@@ -33,9 +35,6 @@
                     <span id="nome">Fulano</span>, seu estilo é
                 </h2>
                 <h1 id="estilo"> Nenhum </h1>
-                <div class="compartilhar">
-                    <button id="compartilhar" type='button' onClick="download()"> Compartilhar </button>
-                </div>
             </div>
 
             <div class="grafico">
@@ -52,8 +51,8 @@
             </div>
         </div>
 
-        <script src="./btnCompartilhar.js"></script>
         <script src="./graficos.js"></script>
+        <script src="./persist.js"></script>
         <script src="../autenticacao/script.js"></script>
     </section>
 </body>

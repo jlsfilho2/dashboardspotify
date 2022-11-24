@@ -13,6 +13,7 @@ window.onload = function () {
         }
     }).then(async (response) => {
         const user_data = await response.json()
+        console.log(user_data);
         document.getElementById('nome').innerHTML = user_data.display_name
     });
 
